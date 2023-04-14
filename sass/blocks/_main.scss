@@ -3,3 +3,9 @@
     height: 200px; 
     background-color: aquamarine;
 }
+
+.main--row{
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}

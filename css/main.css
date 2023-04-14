@@ -94,6 +94,12 @@ html, body {
   background-color: aquamarine;
 }
 
+.main--row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 .sidebar {
   width: 270px;
   height: 200px;
@@ -103,6 +109,7 @@ html, body {
 .card-link {
   display: inline-block;
   transition: opacity 0.2s ease-in, box-shadow 0.2s ease-in;
+  margin-bottom: 30px;
 }
 
 .card-link:hover {
