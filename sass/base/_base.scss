@@ -2,3 +2,20 @@
     display: none; 
 }
 
+html, body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #F4F4F4; 
+
+}
+
+.container{
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+    max-width: 1170px; 
+    margin: 0 auto; 
+}
+
+.row{
+    display: flex; 
+    justify-content: space-between;
+}

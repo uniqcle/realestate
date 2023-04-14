@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +7,7 @@
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
   border: 0;
-  font: inherit;
+  font-family: inherit;
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -68,6 +69,126 @@ img {
 
 .none {
   display: none;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  background-color: #F4F4F4;
+}
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 870px;
+  height: 200px;
+  background-color: aquamarine;
+}
+
+.sidebar {
+  width: 270px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.card-link {
+  display: inline-block;
+  transition: opacity 0.2s ease-in, box-shadow 0.2s ease-in;
+}
+
+.card-link:hover {
+  opacity: 0.8;
+  box-shadow: 0 3px 3px 0 #34495e;
+  transform: translateY(-5px);
+}
+
+.card {
+  width: 270px;
+  background-color: #fff;
+  color: #000000;
+  position: relative;
+}
+
+.card__content {
+  padding: 15px 15px 20px;
+}
+
+.card__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.card__term {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+}
+
+.card__metro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  position: relative;
+}
+.card__metro::before {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  content: "";
+  width: 16px;
+  height: 11px;
+  background-image: url("../imgs/icons/metro.svg");
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+.card__address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #777777;
+}
+
+/* badges */
+.card__badges {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+}
+
+.card__badge--orange {
+  padding: 3px 10px;
+  background-color: #FFCF26;
+  border-radius: 4px;
+}
+
+.card__badge--green {
+  background-color: #11BE75;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */
