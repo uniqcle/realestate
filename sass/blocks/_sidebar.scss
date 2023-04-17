@@ -35,3 +35,61 @@
 
 .widget__body {
 }
+
+
+/* location buttons group */ 
+
+.location-group {
+}
+
+.location__row {
+    display: flex; 
+    
+
+    &:first-child{
+        overflow: hidden; 
+        border: 1px solid #D6D6D6; 
+        border-radius: 4px 4px 0 0; 
+    }
+
+    &:last-child{
+        overflow: hidden; 
+        border: 1px solid #D6D6D6;
+        border-top: none; 
+        border-radius: 0 0 4px 4px; 
+        
+    }
+}
+
+.location__btn {
+    flex-grow: 1;
+     
+    height: 50px; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 17px; 
+    text-align: center; 
+    color: #3C3C3C;
+    transition: background-color 0.2s ease-in; 
+    background-color: #ffc904;
+    cursor: pointer; 
+
+
+    &:hover{
+        background-color: #dfae00;
+    }
+}
+
+.location__checkbox{
+    width: 1px; 
+    height: 1px; 
+    position: absolute; 
+    opacity: 0; 
+    // appearance: none; 
+}
+
+.location__checkbox:checked + .location__btn{
+    background-color: #dbae0c;
+}
