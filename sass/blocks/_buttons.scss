@@ -24,3 +24,42 @@
         vertical-align: middle;
     }
 }
+
+
+/* location buttons group */ 
+
+.location-group {
+}
+
+.location__row {
+    display: flex; 
+
+    &:first-child{
+        overflow: hidden; 
+        border: 1px solid #D6D6D6; 
+        border-radius: 4px 4px 0 0; 
+    }
+
+    &:last-child{
+        overflow: hidden; 
+        border: 1px solid #D6D6D6;
+        border-top: none; 
+        border-radius: 0 0 4px 4px; 
+        
+    }
+}
+
+.location__btn {
+    height: 50px; 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    padding: 17px; 
+    text-align: center; 
+    color: #3C3C3C;
+
+    &--active{
+       background-color: #FFCF26;
+    }
+}

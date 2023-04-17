@@ -101,8 +101,28 @@ html, body {
 
 .sidebar {
   width: 270px;
-  height: 200px;
-  background-color: aqua;
+}
+
+/* widget */
+.widget__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  position: relative;
+  margin-bottom: 20px;
+}
+.widget__title::after {
+  content: "";
+  top: 6px;
+  right: 15px;
+  background-image: url("../imgs/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
+  position: absolute;
+  width: 12px;
+  height: 10px;
 }
 
 .card-link {
@@ -218,6 +238,36 @@ html, body {
   display: inline-block;
   margin-right: 10px;
   vertical-align: middle;
+}
+
+/* location buttons group */
+.location__row {
+  display: flex;
+}
+.location__row:first-child {
+  overflow: hidden;
+  border: 1px solid #D6D6D6;
+  border-radius: 4px 4px 0 0;
+}
+.location__row:last-child {
+  overflow: hidden;
+  border: 1px solid #D6D6D6;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.location__btn {
+  height: 50px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  padding: 17px;
+  text-align: center;
+  color: #3C3C3C;
+}
+.location__btn--active {
+  background-color: #FFCF26;
 }
 
 /*# sourceMappingURL=main.css.map */

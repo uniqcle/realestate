@@ -1,5 +1,37 @@
 .sidebar{
     width: 270px; 
-    height: 200px; 
-    background-color: aqua;
+
+}
+
+/* widget */ 
+
+.widget {
+}
+
+.widget__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16; 
+    
+    position: relative; 
+    margin-bottom: 20px; 
+
+    &::after{
+        content: ""; 
+        top: 6px; 
+        right: 15px; 
+        // background-color: red;
+        background-image: url('../imgs/icons/arrow.svg'); 
+        background-repeat: no-repeat; 
+        background-size: initial; 
+        background-position: center; 
+        position: absolute; 
+        width: 12px; 
+        height: 10px; 
+
+    }
+}
+
+.widget__body {
 }
