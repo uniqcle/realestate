@@ -6,6 +6,10 @@
 /* widget */ 
 
 .widget {
+
+    & + &{
+        margin-top: 30px; 
+    }
 }
 
 .widget__title {
@@ -92,4 +96,62 @@
 
 .location__checkbox:checked + .location__btn{
     background-color: #dbae0c;
+}
+
+/* radio */ 
+
+.radio {
+    display: block; 
+    cursor: pointer; 
+}
+
+.radio + .radio {
+    margin-top: 15px; 
+}
+.radio__real {
+    position: aboslute; 
+    width: 1px; 
+    height: 1px; 
+    opacity: 0; 
+}
+
+.radio__real:checked + .radio__fake{
+    background-color: #dbae0c;
+}
+
+.radio__real:checked + .radio__fake::before{
+    content: ""; 
+    width: 8px; 
+    height: 8px; 
+    background-color: #3C3C3C;
+    border-radius: 50%; 
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+
+}
+
+.radio__fake {
+    position: relative; 
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    background-color: #fff; 
+    border: 1px solid #777777;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+
+.radio__real:checked ~ .radio__title{
+    font-weight: 500; 
+}
+
+.radio__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000000;
+    vertical-align: bottom;
 }
