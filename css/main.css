@@ -231,6 +231,76 @@ html, body {
   vertical-align: bottom;
 }
 
+/* checkbox */
+.checkbox {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.checkbox__real {
+  position: aboslute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.checkbox__real:checked + .checkbox__fake {
+  background-color: #FFE074;
+}
+
+.checkbox__fake {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #777777;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.checkbox__real:checked ~ .checkbox__fake::before {
+  content: "";
+  background-image: url("../imgs/icons/check.svg");
+  background-size: initial;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #3C3C3C;
+  vertical-align: super;
+}
+
+.checkbox__real:checked ~ .checkbox__title {
+  font-weight: 500;
+}
+
+/* Hidden elements */
+.options-show-more {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #4290C9;
+  cursor: pointer;
+}
+
+.options-show-more:hover {
+  text-decoration: underline;
+}
+
 .card-link {
   display: inline-block;
   transition: opacity 0.2s ease-in, box-shadow 0.2s ease-in;
