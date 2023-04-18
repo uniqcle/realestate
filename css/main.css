@@ -287,6 +287,10 @@ html, body {
 }
 
 /* Hidden elements */
+.widget__elements--hidden {
+  display: none;
+}
+
 .options-show-more {
   font-family: inherit;
   font-style: normal;
@@ -299,6 +303,58 @@ html, body {
 
 .options-show-more:hover {
   text-decoration: underline;
+}
+
+/* Toggle */
+.toggle__real {
+  position: aboslute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.toggle__fake {
+  position: relative;
+  display: inline-block;
+  width: 37px;
+  height: 20px;
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.toggle__fake::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #3C3C3C;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+}
+
+.toggle__real:checked + .toggle__fake {
+  background-color: #FFE074;
+}
+
+.toggle__real:checked + .toggle__fake::before {
+  left: 19px;
+}
+
+.toggle__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #3C3C3C;
+  vertical-align: super;
+  cursor: pointer;
+}
+
+.toggle__real:checked ~ .toggle__title {
+  font-weight: 500;
 }
 
 .card-link {
