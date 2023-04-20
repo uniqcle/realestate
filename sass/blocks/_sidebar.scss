@@ -1,8 +1,12 @@
 .sidebar{
     min-width: 200px; 
     width: 270px; 
-
 }
+
+.sidebar--active{
+    transform: translateX(0); 
+}
+
 
 /* widget */ 
 
