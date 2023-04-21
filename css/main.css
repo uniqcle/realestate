@@ -642,12 +642,14 @@ html, body {
 /* Layout */
 .mobile-nav-btn {
   z-index: 999;
+  display: none;
+  position: fixed;
 }
 
-/* @media (max-width: 1000px) {
-	.mobile-nav-btn {
-		display: block;
-	}
-} */
+@media (max-width: 1140px) {
+  .mobile-nav-btn {
+    display: block;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

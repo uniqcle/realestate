@@ -6,5 +6,3 @@ mobileNavBtn.addEventListener('click', function () {
     sideBar.classList.toggle('sidebar--active');
 
 })
-
-console.log(mobileNavBtn); 
