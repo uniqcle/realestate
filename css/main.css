@@ -89,7 +89,6 @@ html, body {
 
 .main {
   width: 870px;
-  background-color: aquamarine;
 }
 
 .main--row {
@@ -158,6 +157,7 @@ html, body {
   line-height: 1.16;
   position: relative;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .widget__title::after {
   content: "";
@@ -170,6 +170,9 @@ html, body {
   position: absolute;
   width: 12px;
   height: 10px;
+}
+.widget__title--active::after {
+  transform: rotate(180deg);
 }
 
 /* location buttons group */

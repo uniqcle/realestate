@@ -25,6 +25,7 @@
     
     position: relative; 
     margin-bottom: 20px; 
+    cursor: pointer; 
 
     &::after{
         content: ""; 
@@ -40,10 +41,13 @@
         height: 10px; 
 
     }
+
+    &--active::after{
+        transform: rotate(180deg); 
+    }
 }
 
-.widget__body {
-}
+
 
 
 /* location buttons group */ 
